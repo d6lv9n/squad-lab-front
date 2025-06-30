@@ -1,13 +1,13 @@
+import './style.css';
 import router from './router/index.js';
 import { createApp } from 'vue';
-import './style.css';
-import App from './App.vue';
+import root from './app/Root.vue';
 
-const root = createApp(App);
+const App = createApp(root);
 
-root.use(router);
+App.use(router);
 
 router.isReady()
     .then(() => {
-        root.mount('#app');
+        App.mount('#app');
     });
