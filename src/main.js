@@ -1,9 +1,9 @@
 import './style.css';
 import router from './router/index.js';
 import { createApp } from 'vue';
-import root from './app/Root.vue';
+import Root from './app/Root.vue';
 
-const App = createApp(root);
+const App = createApp(Root);
 
 App.use(router);
 
