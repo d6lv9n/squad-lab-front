@@ -1,13 +1,11 @@
 <template>
     <div>
-        <RouterLink :to="{ name: 'account.login' }">Log in</RouterLink>
-        <br/>
-        <RouterLink :to="{ name: 'account.signup' }">Sign up</RouterLink>
+        <Navigation></Navigation>
 
         <RouterView></RouterView>
     </div>
 </template>
 
 <script setup>
-
+import Navigation from './components/Navigation.vue';
 </script>
