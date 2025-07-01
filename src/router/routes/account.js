@@ -1,22 +1,22 @@
-import Root from '@/pages/account/Root.vue';
-import Login from '@/pages/account/children/Login.vue';
-import Signup from '@/pages/account/children/Signup.vue';
+import AccountRoot from '@/pages/account/Root.vue';
+import AccountLogin from '@/pages/account/children/Login.vue';
+import AccountSignup from '@/pages/account/children/Signup.vue';
 
 export default {
     path: '/account',
-    component: Root,
+    component: AccountRoot,
     children: [
         {
             meta: {},
             path: 'login',
             name: 'account.login',
-            component: Login,
+            component: AccountLogin,
         },
         {
             meta: {},
             path: 'signup',
             name: 'account.signup',
-            component: Signup,
+            component: AccountSignup,
         }
     ]
 };
