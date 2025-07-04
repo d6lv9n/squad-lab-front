@@ -1,8 +1,7 @@
 <template>
-    <nav class="bg-white flex flex-1 flex-row h-14 items-center px-3 shadow-sm shadow-gray-300/60 sticky top-0 w-full
+    <nav class="bg-white flex flex-1 flex-row h-14 items-center px-3 shadow-sm shadow-gray-300/60 w-full
     sm:h-16">
-        <span class="flex-1 font-bold text-xl
-        sm:text-2xl">Squad Lab</span>
+        <span class="font-bold text-2xl">Squad Lab</span>
 
         <div class="flex flex-1 flex-row items-center justify-end">
             <RouterLink
