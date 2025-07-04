@@ -2,6 +2,7 @@ import store from '../store/index.js';
 import { createRouter, createWebHistory } from 'vue-router';
 // Routes
 import account from './routes/account.js';
+import boards from './routes/boards.js';
 import index from './routes/index.js';
 
 // Create Router
@@ -9,6 +10,7 @@ const router = createRouter({
     history: createWebHistory(),
     routes: [
         account,
+        boards,
         index,
     ]
 });
