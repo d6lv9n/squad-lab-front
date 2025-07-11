@@ -9,12 +9,7 @@ export const useInput = (defaultValue = '') => {
     });
     
     // Functions
-    const clearError = () => {
-        data.error = false;
-        data.errorMessage = null;
-    };
-
-    const setError = (err, msg) => {
+    const setError = (err = false, msg = null) => {
         data.error = err;
         data.errorMessage = msg;
     };
@@ -22,6 +17,5 @@ export const useInput = (defaultValue = '') => {
     return {
         data,
         setError,
-        clearError,
     };
 };
