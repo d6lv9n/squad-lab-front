@@ -3,6 +3,7 @@ import { createRouter, createWebHistory } from 'vue-router';
 // Routes
 import account from './routes/account.js';
 import boards from './routes/boards.js';
+import home from './routes/home.js';
 import index from './routes/index.js';
 
 // Create Router
@@ -11,6 +12,7 @@ const router = createRouter({
     routes: [
         account,
         boards,
+        home,
         index,
     ]
 });
