@@ -1,8 +1,8 @@
-import Root from '@/pages/index/Root.vue';
+import IndexRoot from '@/pages/index/Root.vue';
 
 export default {
     meta: {},
     path: '/',
     name: 'index',
-    component: Root,
+    component: IndexRoot,
 };
