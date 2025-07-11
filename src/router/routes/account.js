@@ -7,13 +7,19 @@ export default {
     component: AccountRoot,
     children: [
         {
-            meta: {},
+            meta: {
+                guestOnly: true,
+                userOnly: false,
+            },
             path: 'login',
             name: 'account.login',
             component: AccountLogin,
         },
         {
-            meta: {},
+            meta: {
+                guestOnly: true,
+                userOnly: false,
+            },
             path: 'signup',
             name: 'account.signup',
             component: AccountSignup,
